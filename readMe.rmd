@@ -1,4 +1,5 @@
-**Objective of Getting and Cleaning Data Project**
+# Objective of Getting and Cleaning Data Project #
+
 Read , Analyze and Clean data which was about  "Human Activity Recognition Using Smartphones" data set and to make it look tidy.
 
 **Basic Steps or Pre-requisites for this project**
