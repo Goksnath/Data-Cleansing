@@ -1,12 +1,12 @@
-#Objective of Getting and Cleaning Data Project
+#Objective of Getting and Cleaning Data Project#
 Read , Analyze and Clean data which was about  "Human Activity Recognition Using Smartphones" data set and to make it look tidy.
 
-#Basic Steps or Pre-requisites for this project
+#Basic Steps or Pre-requisites for this project##
 1.Set the working directory
 2.Download the zip file from the data source and unzip it in the working directory.
 3.reshape2 package to be loaded for project purposes
 
-#Starting with the project
+#Starting with the project##
 1.Run the run_analysis.R file step-by-step
 2.Output is stored as a variable named final_data and also the output has been wrote down to a file named tidy.txt
 
