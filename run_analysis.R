@@ -46,6 +46,8 @@ int_Data$subject <- as.factor(int_Data$subject)
 melted_data <- melt(int_Data, id = c("subject", "activity"))
 final_data <- dcast(melted_data, subject + activity ~ variable, mean)
 
+#Displays the final tidy data_set
 View(final_data)
 
+#writing the final output to tidy,txt file in the current directory
 write.table(final_data, "tidy.txt", row.names = FALSE, quote = FALSE)

@@ -1,0 +1,46 @@
+#Code Book
+The following codebook contains the explanation for the datasets,variables as well as the approach to 
+convert a messy dataset to a tidy dataset
+
+##Overview of the Project
+The experiments were carried out with a group of 30 volunteers within an age bracket of 19-48 years. They performed a protocol of activities composed of six basic activities: three static postures (standing, sitting, lying) and three dynamic activities (walking, walking downstairs and walking upstairs). The experiment also included postural transitions that occurred between the static postures. These are: stand-to-sit, sit-to-stand, sit-to-lie, lie-to-sit, stand-to-lie, and lie-to-stand.
+
+##Initial data knowledge
+Data consisted of training and testing data with training contributed to 70% and rest by the testing data.
+Total number of rows = 10299
+Data basically consisted of the following directories
+
+* features_info.txt : Shows information about the variables used on the feature vector.
+
+* features.txt : List of all features.
+
+* activity_labels.txt : Links the class labels with their activity name.
+
+* train/X_train.txt : Training set.
+
+* train/y_train.txt : Training labels.
+
+* test/X_test.txt : Test set.
+
+* test/y_test.txt : Test labels.
+
+P.S. The Inertial Signal which contained the raw files were omitted as it was not required for our project.
+
+##Approach handled to convert messy data into a tidy dataset
+Step 1: Storing the activity labels and features label in activity_label and features variable and it is also converted to character datafile
+Step 2: Extractng data that contains only mean and standard devation(std) and storing the index in features_extracted and the values in features_descriptive
+Step 3: Replacing the names to a proper descriptive ones and storing it in features_descriptive
+Step 4: Loading the training dataset along with its activities and subjects to a variable called train
+Step 5: Loading the testing dataset along with its activities and subjects to a variable called test
+Step 6: Integrating the training and testing data into a variable called int_data
+Step 7: Converting activitity label and features label to factor datatype so as the activities can be converted to their corresponding activities. The label to the corresponding activity is as follows,
+
+* WALKING            (value 1): subject was walking during the test
+* WALKING_UPSTAIRS   (value 2): subject was walking up a staircase during the test
+* WALKING_DOWNSTAIRS (value 3): subject was walking down a staircase during the test
+* SITTING            (value 4): subject was sitting during the test
+* STANDING           (value 5): subject was standing during the test
+* LAYING             (value 6): subject was laying down during the test 
+Step 8: Data is melted and casted to the final output form and it is stored in a variable called final_data
+Step 9: Write the final_data to a file called "tidy.txt"
+
