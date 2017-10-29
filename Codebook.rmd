@@ -1,13 +1,13 @@
-**Code Book**
+# Code Book #
 
 The following codebook contains the explanation for the datasets,variables as well as the approach to 
 convert a messy dataset to a tidy dataset
 
-**Overview of the Project**
+##Overview of the Project##
 
 The experiments were carried out with a group of 30 volunteers within an age bracket of 19-48 years. They performed a protocol of activities composed of six basic activities: three static postures (standing, sitting, lying) and three dynamic activities (walking, walking downstairs and walking upstairs). The experiment also included postural transitions that occurred between the static postures. These are: stand-to-sit, sit-to-stand, sit-to-lie, lie-to-sit, stand-to-lie, and lie-to-stand.
 
-**Initial data knowledge**
+##Initial data knowledge##
 
 Data consisted of training and testing data with training contributed to 70% and rest by the testing data.
 Total number of rows = 10299
@@ -29,7 +29,7 @@ Data basically consisted of the following directories
 
 P.S. The Inertial Signal which contained the raw files were omitted as it was not required for our project.
 
-**Approach handled to convert messy data into a tidy dataset**
+##Approach handled to convert messy data into a tidy dataset##
 
 Step 1: Storing the activity labels and features label in activity_label and features variable and it is also converted to character datafile
 
